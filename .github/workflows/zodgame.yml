@@ -13,7 +13,7 @@ jobs:
     - name: Add random delay
       id: random-delay
       run: |
-        $sleeptime = Get-Random -Maximum 100
+        $sleeptime = Get-Random -Maximum 450
         Start-Sleep -Seconds $sleeptime
     - name: Install requirements
       run: |
