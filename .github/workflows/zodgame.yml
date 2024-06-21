@@ -13,7 +13,7 @@ jobs:
     - name: Add random delay
       id: random-delay
       run: |
-        RANDOM_DELAY=$(( RANDOM % 450 ))
+        RANDOM_DELAY=$[ RANDOM % 450 ]
         sleep $RANDOM_DELAY
     - name: Install requirements
       run: |
