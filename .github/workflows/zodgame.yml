@@ -13,9 +13,9 @@ jobs:
     - name: Add random delay
       id: random-delay
       run: |
-        $sleeptime = Get-Random -Maximum 450
+        $sleeptime = Get-Random -Maximum 10
         $sleeptime
-        Start-Sleep -Seconds $sleeptime
+        Start-Sleep -Minutes $sleeptime
     - name: Install requirements
       run: |
         pip3 install -r ./zodgame/requirements.txt
