@@ -14,6 +14,7 @@ jobs:
       id: random-delay
       run: |
         $sleeptime = Get-Random -Maximum 10
+        $sleeptime
         $sleeptime *= 60
         $sleeptime
         Start-Sleep -Seconds $sleeptime
